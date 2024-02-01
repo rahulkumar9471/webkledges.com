@@ -14,7 +14,7 @@
 
 <body>
     <!-- Navbar -->
-    <header>
+    <header class="bg-white w-full z-10">
         <nav
             class="flex w-full justify-between px-[2rem] sm:px-[4rem] md:px-[4rem] lg:px-[6rem] xl:px-[10rem] py-4 md:py-6 shadow-md items-center">
             <div class="flex justify-between gap-x-20">
@@ -63,12 +63,16 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     <button
+                        onClick="toggleBar()"
                         class="bg-gradient-to-r from-[#FFA387] via-[#FE4F70] to-[#FFA387] p-2 rounded-full h-[40px] w-[40px] justify-center items-center text-center align-middle text-white">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
         </nav>
+        <div class="bg-[#FFF] w-[300px] fixed top-0 right-0 h-dvh shadow-md z-50" id="sidebar">
+             
+        </div>
     </header>
     <!-- Navbar Close -->
 
@@ -490,6 +494,13 @@
         </div>
     </footer>
     <!-- Footer Close -->
+
+    <script>
+        function toggleBar () {
+            var sideBar = document.getElementById("sideBar");
+             
+        }
+    </script>
 </body>
 
 </html>
